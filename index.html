@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elder Care Services - Panchkula</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS & Icons -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  html {
+  scroll-behavior: smooth;
+}
+    body {
+      background: #f3f6fc;
+      
+    }
+    h1 , h2, h3 ,h4 ,h5 ,h6{
+font-family: impact;
+font-weight: 100 !important;
+color: #0e73c8 !important;
+
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    
+      color: #fff;
+    }
+
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      filter: brightness(0.4);
+    }
+
+    .hero-overlay {
+      position: relative;
+      z-index: 2;
+      padding: 60px;
+      max-width: 600px;
+    }
+
+    .badge {
+      background: rgba(255,255,255,0.1);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .hero-overlay h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      line-height: 1.3;
+      margin: 20px 0;
+    }
+
+    .feature-icon-box {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      background: rgba(255,255,255,0.1);
+      padding: 12px 16px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .feature-icon-box i {
+      font-size: 1.4rem;
+      color: #fff;
+    }
+
+    .stat-boxes1 {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .stat-box1 {
+      background: rgba(255,255,255,0.15);
+      border-radius: 10px;
+      padding: 10px 10px;
+      text-align: center;
+    }
+
+    .btn-custom {
+      background: #007bff;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 30px;
+      color: #fff;
+      font-weight: 500;
+      margin-top: 30px;
+      transition: 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background: #0056d2;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-overlay {
+        padding: 30px;
+        max-width: 100%;
+      }
+
+      .stat-boxes1 {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-icon-box {
+        justify-content: center;
+      }
+   
+    }
+   
+   
+
+
+    .profile-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 100%;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .profile-img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .role {
+      font-weight: 600;
+      color: #0d6efd;
+    }
+
+    .name {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      line-height: 1.6;
+    }
+
+    .info-block {
+      background-color: #f1f3f5;
+      padding: 0.8rem 1.2rem;
+      border-radius: 0.75rem;
+      text-align: center;
+      flex: 1;
+    }
+
+    .info-block h6 {
+      margin-bottom: 0.2rem;
+      font-weight: 700;
+      color: #212529;
+    }
+
+    .info-block div {
+      font-size: 0.85rem;
+      color: #6c757d;
+    }
+    
+    
+    
+  
+  
+      .stats-section {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .stat-box {
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+    .stat-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+    .stat-icon {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    .stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #007bff;
+    }
+    .stat-label {
+      font-size: 16px;
+      color: #555;
+    }
+    .stat-highlight {
+      background-color: #007bff;
+      color: white;
+    }
+    .stat-highlight .stat-icon,
+    .stat-highlight .stat-value,
+    .stat-highlight .stat-label {
+      color: white;
+    }
+    
+    
+     .callback-section {
+      padding: 40px 20px;
+      color: white;
+    }
+    .callback-box {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .form-control,
+    .form-select {
+      border-radius: 12px;
+      height: 48px;
+    }
+    .btn-callback {
+      height: 48px;
+      border-radius: 12px;
+      background-color: #3cab2f;
+      color: white;
+      font-weight: 600;
+      border: none;
+      transition: background 0.3s ease;
+     font-size:14px;
+    }
+    .btn-callback:hover {
+      background-color: #2e9325;
+    }
+
+    .faq-section {
+  background-color: white;
+  height: fit-content;
+
+}
+.faq-body {
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+ 
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  border: none;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #CF3425;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #CF3425;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #CF3425;
+  border: 1px solid #CF3425;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  font-weight: 500;
+  color: #4f5560;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] 
+{
+ background-color: #f2f5f7 !important;
+ border-top-right-radius: 5px;
+ border-top-left-radius: 5px;
+}
+.accordion button[aria-expanded='true'] {
+  color:#CF3425;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+  color: #7e7f7f;
+}
+@media (min-width: 768px) {
+ 
+  
+  .faq-section {
+    padding: 50px 0;
+  
+
+  }
+}
+@media (max-width: 800px) 
+{
+  .faq-section {
+    height: fit-content !important;
+
+  }
+  .accordion .accordion-content p
+  {
+    margin: .5em !important;
+  }
+}
+
+
+
+
+  .divider-line {
+      border-bottom: 1px solid #ccc;
+      margin: 1rem 0 2rem;
+    }
+
+    .icon-box {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .icon-box i {
+      font-size: 2rem;
+      color: #004080;
+    }
+
+    .mini-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .highlight-nums {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .highlight-nums span.in {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0.3rem;
+    }
+
+    .vertical-line {
+      width: 1px;
+      background-color: #ddd;
+      height: 250px;
+      margin: auto 1rem;
+    }
+
+    .right-img {
+      border-radius: 16px;
+      width: 100%;
+      max-width: 400px;
+      object-fit: cover;
+      border: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      .vertical-line {
+        display: none;
+      }
+      .highlight-nums {
+        justify-content: center;
+      }
+      .icon-box {
+        justify-content: center;
+      }
+         .callback-section {
+      padding: 10px !important;
+   
+    }
+    }
+    
+    
+    :root {
+      --zorgers-blue: #0e73c8;
+      --light-blue: #e3f2fd;
+      --soft-blue: #d0e8fc;
+      --light-green: #e1f7d5;
+      --light-pink: #ffe4ec;
+    }
+
+    .card-custom {
+      border-radius: 20px;
+      padding: 25px;
+      color: #000;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      background-color: var(--light-blue);
+      height: 100%;
+    }
+        .card-custom2 {
+      border-radius: 20px;
+      padding: 10px;
+      color: #000;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      background-color: var(--light-blue);
+      height: 100%;
+    }
+     .card-custom3 {
+      border-radius: 20px;
+      padding: 25px;
+      color: #000;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      background-color: var(--light-blue);
+      height: 100%;
+    }
+    
+
+    .card-custom:hover,  .card-custom3:hover ,  .card-custom2:hover {
+      transform:  scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .bg-zorgers {
+      background-color: var(--zorgers-blue);
+      color: #fff;
+    }
+
+    .bg-highlight {
+      background-color: var(--soft-blue);
+    }
+
+    .bg-greenish {
+      background-color: var(--light-green);
+    }
+
+    .bg-pinkish {
+      background-color: var(--light-pink);
+    }
+
+    .svg-icon {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+      fill: var(--zorgers-blue);
+    }
+
+ 
+
+    .badge-custom {
+      background-color: #fff;
+      color: var(--zorgers-blue);
+    }
+        @media (max-width: 768px){
+         .card-custom3{
+         padding :0px;
+         }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+          .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+    
+    }
+
+    .location-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .location-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #f1f3f5;
+      padding: 0.5rem 0.8rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      color: #343a40;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .location-item img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .map-image {
+      max-height:70%;
+      width: 70%;
+      object-fit: contain;
+      border-radius: 0.75rem;
+      
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      color: #495057;
+    }
+    @media (max-width: 768px){
+       .map-image {
+      max-height:100%;
+      width: 100%;   
+    }
+    }
+    
+    
+    
+    
+    
+      .circle-stat {
+      background:#d0e8fc;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #447904;
+      margin: auto;
+    }
+
+    .circle-stat small {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .watch-btn {
+      background-color: #0e73c8;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      margin: 20px 0;
+    }
+
+    .section-heading {
+      font-family: 'Georgia', serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .video-note {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    .image-box {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .image-box:hover {
+      transform: translateY(-4px);
+    }
+
+    .badge-icon {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background-color: #fff;
+      color: #2c2c2c;
+      padding: 6px 14px;
+      border-radius: 25px;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .blue-dot {
+      width: 10px;
+      height: 10px;
+      background: #0e73c8;
+      border-radius: 50%;
+    }
+   @media (max-width: 768px){
+       .section-heading {
+     
+      font-size: 1.4rem;
+   
+    }
+      .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   }
+
+
+
+
+       .section-highlight-offer {
+      background: #e8f0fe;
+      border-left: 5px solid #0d6efd;
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    .floating-contact-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: #007bff;
+    padding: 10px 16px;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.7s ease, background 0.7s ease;
+  }
+
+  .contact-btn:hover {
+    transform: scale(1.05);
+  }
+
+  .contact-btn i {
+    font-size: 18px;
+  }
+
+  .whatsapp-btn {
+    background-color: #25D366;
+  }
+
+  .call-btn {
+    background-color: #007bff;
+  }
+
+  .label {
+    display: inline-block;
+  }
+
+  @media (max-width: 768px) {
+    .label {
+      display: none;
+    }
+
+    .contact-btn {
+      width: 48px;
+      height: 48px;
+      justify-content: center;
+      padding: 0;
+      border-radius: 50%;
+    }
+  }
+  
+  
+  
+   .footer {
+       background-image: url('./footer-bg.webp'); /* Replace with actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      color: #fff;
+      padding: 40px 20px;
+      position: relative;
+    }
+    .footer-arrow{
+    position: absolute;
+     background-image: url('./arrow-icon.webp'); /* Replace with actual path */
+        width: 100%;
+    position: absolute;
+    height: 11px;
+    display: block;
+    left: 0;
+    top: -11px;
+    background-size: 21px 11px;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer .footer-title {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer .social-icons a {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    .footer ul li::before {
+      content: '\276F';
+      margin-right: 8px;
+      color: #fff;
+    }
+   
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-white" style="z-index:300;       background: rgba(255,255,255,0.3);">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand text-white" href="#"><img src="zorgers-logo.webp" style="width: 160px"></a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="https://www.zorgers.com/">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="https://www.zorgers.com/elder-care-at-home/panchkula">Elder Care at Home</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="https://www.zorgers.com/medical-equipment">Medical Equipment</a>
+        </li>
+       
+      </ul>
+     <div class="d-sm-flex align-items-center ms-auto">
+      <div style="width:200px">
+        <i class="bi bi-telephone-fill"></i> 8725024124
+      </div>
+     <div class="input-group" style="background-color: transparent; border: none;">
+  <span class="input-group-text" style="background-color: transparent; border-radius:10px; color:black">+91</span>
+  <input type="text" placeholder="REQUEST A CALL BACK" 
+       style="background-color: transparent; border:1px solid black; border-radius:10px; opacity: 1;
+             ">
+  <button class="btn btn-primary">Submit</button>
+</div>
+    </div>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" >
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="d_banner_punjab1.webp" class="d-none d-sm-block w-100 " alt="..." style="height :100%">
+       <img src="m_banner_punjab1.webp" class="d-sm-none  w-100 " alt="..." style="height :100%">
+    </div>
+    <div class="carousel-item">
+     <img src="d_banner_punjab2.webp" class="d-none d-sm-block w-100 " alt="..." style="height :100%">
+       <img src="m_banner_punjab1.webp" class="d-sm-none  w-100 " alt="..." style="height :100%">
+    </div>
+    <div class="carousel-item">
+    <img src="d_banner_punjab3.webp" class="d-none d-sm-block w-100 " alt="..." style="height :100%">
+       <img src="m_banner_punjab1.webp" class="d-sm-none  w-100 " alt="..." style="height :100%">
+    </div>
+
+  </div>
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark rounded" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark rounded" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+<div class="container mt-4 mt-sm-5">
+  <div class="row">
+      <h3 class="text-center  fw-bold mt-2 mb-sm-5">
+     Medical Attendant Work Responsibilities
+      </h3>
+    <!-- Card 1 -->
+    <div class="col-lg-4 col-md-6 mb-sm-4 h-100" >
+      <div class="profile-card h-100">
+        <div class="profile-header mb-3">
+          <img src="https://img.icons8.com/color/96/nurse-female.png" class="profile-img" />
+          <div>
+            <div class="role">Caregiver – Level 1</div>
+            <div class="name">Assisted Living</div>
+            <small class="text-muted">Elder Companionship</small>
+          </div>
+        </div>
+        <ul class="text-muted small">
+          <li>💧 Bathing & hygiene support</li>
+          <li>🚽 Toilet / diaper assistance</li>
+          <li>🍲 Meal serving & routine</li>
+          <li>🤝 Companionship & walks</li>
+          <li>🧹 Clean surroundings</li>
+          <li>📋 Basic vital checks</li>
+        </ul>
+        <div class="d-flex gap-3 mt-3">
+          <div class="info-block"><h6>5500+</h6><div> Attendants</div></div>
+          <div class="info-block"><h6>Since 2013</h6><div>ISO Certified</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-4 col-md-6 mb-sm-4 h-100">
+      <div class="profile-card h-100">
+        <div class="profile-header mb-3">
+          <img src="https://img.icons8.com/color/96/nurse-male.png" class="profile-img" />
+          <div>
+            <div class="role">Caregiver – Level 2</div>
+            <div class="name">Post-Hospital / Semi-Bedridden</div>
+            <small class="text-muted">Medical Assistance @ Home</small>
+          </div>
+        </div>
+        <ul class="text-muted small">
+          <li>🛌 Bed care & RT feeding</li>
+          <li>💊 Medicine administration</li>
+          <li>♿ Mobility via walker/wheelchair</li>
+          <li>💨 Nebulization (as required)</li>
+          <li>🧼 Clean environment</li>
+          <li>📈 Vitals charting (BP, Pulse)</li>
+        </ul>
+        <div class="d-flex gap-3 mt-3">
+          <div class="info-block"><h6>4.7 ★</h6><div>Google Rating</div></div>
+          <div class="info-block"><h6>24x7</h6><div>Availability</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-4 col-md-6 mb-sm-4 h-100">
+      <div class="profile-card h-100">
+        <div class="profile-header mb-3">
+          <img src="https://img.icons8.com/color/96/nurse-female.png" class="profile-img" />
+          <div>
+            <div class="role">Caregiver – Level 3</div>
+            <div class="name">Critical Medical Care</div>
+            <small class="text-muted">ICU at Home</small>
+          </div>
+        </div>
+        <ul class="text-muted small">
+          <li>💉 Injections / IV / TPN</li>
+          <li>🫁 Ventilator / BiPAP / CPAP</li>
+          <li>🧪 Catheter, suction, tracheostomy</li>
+          <li>💊 Advanced med management</li>
+          <li>📊 24x7 health monitoring</li>
+          <li>🩺 Expert caregiver attention</li>
+        </ul>
+        <div class="d-flex gap-3 mt-3">
+          <div class="info-block"><h6>ICU+</h6><div>Home Setup</div></div>
+          <div class="info-block"><h6>Certified</h6><div>Medical Team</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<section class="section container" style="padding: 1rem 1rem;">
+  <div class="row align-items-center">
+    <!-- Left Section -->
+    <div class="col-md-6">
+      <h2 class="fw-bold">Your trusted partner<br>in healthcare</h2>
+      <p class="text-muted">Take control, make health your goal</p>
+      <div class="divider-line"></div>
+
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <!-- Icon with Text and Image -->
+        <div class="d-flex align-items-center gap-3">
+          <div class="icon-box d-sm-block d-none">
+            <i class="bi bi-heart-pulse-fill"></i>
+          </div>
+          <div>
+            <p class="mb-1 small text-muted">
+              Caring for your family like our own,<br />
+              building a healthier Punjab together.
+            </p>
+            <img src="nursing-care.webp" alt="Care icon" class="mini-img mt-2" />
+          </div>
+        </div>
+
+        <div class="vertical-line d-none d-md-block"></div>
+
+        <!-- Highlight Stats -->
+        <div class="text-center">
+          <div class="highlight-nums">
+            <span>3</span>
+            <span class="in">in</span>
+            <span>5</span>
+          </div>
+          <p class="small text-muted">
+            families across <b>Punjab</b> trust<br>
+            Zorgers for elder home care.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="col-md-6 text-center mt-4 mt-md-0">
+      <p class="text-muted mb-2 fs-4">
+        Family-centered care, community-driven<br />
+        service across <b>Punjab</b>.
+      </p>
+      <img src="sujan-singh.webp" alt="Elder couple" class="right-img" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div class="container py-5">
+  <div class="row g-4">
+    <!-- Left Column -->
+    <div class="col-md-6 d-flex flex-column gap-3">
+      <!-- Elder Care Main Card -->
+      <div class="card-custom bg-highlight d-flex flex-column justify-content-between h-100">
+        <div>
+          <span class="badge badge-custom mb-2">#ElderCare</span>
+          <h4 class="fw-bold text-primary">Elder Care Services in Punjab</h4>
+          <p class="mt-2">Professional home healthcare for elders across Mohali, Chandigarh, Ludhiana, Amritsar and nearby cities.</p>
+        </div>
+        <div>
+        </div>
+     
+
+      <!-- Certified Attendants -->
+      <div class="card-custom2  d-flex align-items-center gap-3">
+        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+                   10-4.48 10-10S17.52 2 12 2zm-1
+                   17.07V19h2v.07A8.12 8.12 0 0 1
+                   4.93 13H5v-2H4.93A8.12 8.12 0 0 1
+                   11 4.93V5h2v-.07A8.12 8.12 0 0 1
+                   19.07 11H19v2h.07A8.12 8.12 0 0 1
+                   13 19.07z"/>
+        </svg>
+        <div>
+          <h5 class="fw-bold text-primary mb-0">5,500+</h5>
+          <small>Certified Attendants</small>
+        </div>
+      </div>
+
+      <!-- ISO Certified Agency -->
+      <div class="card-custom2  d-flex align-items-center gap-3 mt-2">
+        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2
+                   12s4.48 10 10 10 10-4.48
+                   10-10S17.52 2 12 2zm5 13h-2v2h-2v-2H9v-2h2V9h2v2h2v2z"/>
+        </svg>
+        <div>
+          <h6 class="fw-bold text-primary mb-0">ISO 9001:2015</h6>
+          <small>Certified Care Agency</small>
+        </div>
+      </div>
+       </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-md-6">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="card-custom bg-zorgers">
+            <span class="badge bg-light text-primary mb-2">Live Support</span>
+            <h5 class="fw-bold">24/7 Home Health Assistance</h5>
+            <p class="mb-1">Always available for your family’s medical needs at home</p>
+            <small>Serving all cities in Punjab</small>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card-custom3  text-center">
+            <svg class="svg-icon mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4S14.21 4
+                       12 4 8 5.79 8 8s1.79 4 4 4zm0
+                       2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <h4 class="fw-bold text-primary">10+</h4>
+            <p>Years Experience</p>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card-custom3  text-center">
+            <svg class="svg-icon mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32C5.4
+                       15.36 2 12.28 2 8.5 2 6.5 3.5
+                       5 5.5 5c1.54 0 3.04.99 3.57
+                       2.36h1.87C13.46 5.99 14.96
+                       5 16.5 5 18.5 5 20 6.5 20
+                       8.5c0 3.78-3.4 6.86-8.55
+                       11.54L12 21.35z"/>
+            </svg>
+            <h4 class="fw-bold text-primary">150k+</h4>
+            <p>Care Hours Delivered</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="py-5 bg-light ">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Text Block -->
+        <div class="col-md-12 mb-4 mb-md-0">
+          <div class="section-highlight-offer">
+            <h2 class="text-primary fw-bold">Get 10% Off on Medical Equipment Rentals</h2>
+            <p class="mb-3">Book any of our home care services today and enjoy an exclusive <strong>10% discount</strong> on all medical equipment rentals.</p>
+            <ul class="list-unstyled mb-4">
+              <li>✅ Hassle-free doorstep delivery</li>
+              <li>✅ Quality-checked equipment</li>
+              <li>✅ Affordable rental packages</li>
+            </ul>
+            <a href="#contact-form" class="btn btn-primary px-4">Book Now & Save 10%</a>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+<!-- Why Us Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Text + Cities -->
+      <div class="col-md-6">
+        <h3 class="section-title mb-3">Why Punjab Trusts Zorgers</h3>
+        <p>From Mohali to Amritsar, Zorgers is redefining home healthcare across Punjab with trained medical caregivers, quick onboarding, and trusted local teams.</p>
+        <ul>
+          <li><b>Care teams active in 8+ major cities</b></li>
+          <li><b>Quick onboarding with local support staff</b></li>
+          <li><b>Round-the-clock emergency readiness</b></li>
+        </ul>
+
+        <div class="location-list mt-4">
+          <div class="location-item">
+            <img src="https://img.icons8.com/color/48/place-marker.png" alt="Mohali" /> Mohali
+          </div>
+          <div class="location-item">
+            <img src="https://img.icons8.com/color/48/place-marker.png" alt="Doaba" /> Doaba
+          </div>
+          <div class="location-item">
+            <img src="https://img.icons8.com/color/48/place-marker.png" alt="Ludhiana" /> Ludhiana
+          </div>
+          <div class="location-item">
+            <img src="https://img.icons8.com/color/48/place-marker.png" alt="Patiala" /> Patiala
+          </div>
+          <div class="location-item">
+            <img src="https://img.icons8.com/color/48/place-marker.png" alt="Amritsar" /> Amritsar
+          </div>
+          <div class="location-item">
+            <img src="https://img.icons8.com/color/48/place-marker.png" alt="Pathankot" /> Pathankot
+          </div>
+          <div class="location-item">
+            <img src="https://img.icons8.com/color/48/place-marker.png" alt="Bathinda" />Bathinda
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Image -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="service_area_map.webp"
+     alt="Punjab Map"
+     class="map-image" />
+        <!-- Replace the src with your actual map image file -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- faq-start -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-12 col-md-5">
+          <img src="landing1.webp" style="width:100%">
+        </div>
+        <div class="col-12 col-md-5 d-flex align-items-center">
+          <div class="faq-body">
+            <h2 style="font-size: 30px;
+            font-weight: 700;
+            color: #111827;">Frequently Asked Questions</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title ps-1">What are the steps to begin services for my elderly family member?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    To start services, simply contact us for a free consultation. We'll assess your needs, develop a personalized care plan, and match you with a suitable caregiver from our team.
+
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                  <span class="accordion-title ps-1">Can I choose a specific caregiver for my loved one?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                  Yes, we understand the importance of compatibility in caregiving. We offer 12 hours/24 hours and live in care services and also provide the flexibility to choose caregivers based on their expertise, experience, and even personality traits to match your loved one’s needs and preferences.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                  <span class="accordion-title ps-1">Can I change the caregiver if I am not satisfied?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+Absolutely. If you feel the caregiver is not the right fit, we can arrange a replacement to ensure your loved one’s needs and comfort are adequately met.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                  <span class="accordion-title ps-1">What if we do not like the home care staff. Will we &nbsp; &nbsp; &nbsp;&nbsp; get a replacement?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                   Yes. That's the key benefit you get as part of managed healthcare services at home. If for any reason there are issues or the healthcare need of your loved one change; we will resolve the issue in the best possible manner.
+
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title ps-1">In which areas is 24x7 elderly care service available?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                   Our 24x7 home services for the elderly are available throughout Amritsar, Ludhiana, Jalandhar, Patiala, and beyond. We can arrange for visits, care on an hourly basis and can be availed for a full 24 hours (rotating staff or single resident staff).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- faq-end -->
+
+
+
+
+<!-- Floating WhatsApp & Call Buttons -->
+<div class="floating-contact-buttons">
+  <a href="https://wa.me/917087602000" target="_blank" class="contact-btn whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> <span class="label">Chat</span>
+  </a>
+  <a href="tel:+918725024124" class="contact-btn call-btn">
+    <i class="fas fa-phone-alt"></i> <span class="label">Call</span>
+  </a>
+   <a href="#contact-form" class="contact-btn form-btn">
+    <i class="fas fa-edit"></i> <span class="label">Form</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer class="footer">
+ <div class="footer-arrow"></div>
+    <div class="container">
+      <div class="row">
+        <!-- Column 1 -->
+        <div class="col-md-3 col-6">
+          <h5 class="footer-title">Zorgers</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.zorgers.com/patient-stories/elder-care-1">Patient Stories</a></li>
+            <li><a href="https://www.zorgers.com/blog/">Blog</a></li>
+            <li><a href="https://www.zorgers.com/about-us">About Us</a></li>
+            <li><a href="https://www.zorgers.com/contact-us">Contact Us</a></li>
+            <li><a href="https://www.zorgers.com/faq">FAQs</a></li>
+            <li><a href="https://www.zorgers.com/careers">Careers</a></li>
+            <li><a href="https://www.zorgers.com/terms-and-conditions">Terms & Conditions</a></li>
+            <li><a href="https://www.zorgers.com/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://www.zorgers.com/shipping-policy">Shipping Policy</a></li>
+            <li><a href="https://www.zorgers.com/return-policy">Return Policy</a></li>
+            <li><a href="https://www.zorgers.com/payment-option/">Payment Options</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-3 col-6">
+          <h5 class="footer-title">Our Reach</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.zorgers.com/home-care/panchkula">Panchkula</a></li>
+            <li><a href="https://www.zorgers.com/home-care/chandigarh">Chandigarh</a></li>
+            <li><a href="https://www.zorgers.com/home-care/pinjore">Pinjore</a></li>
+            <li><a href="https://www.zorgers.com/home-care/ambala">Ambala</a></li>
+            <li><a href="https://www.zorgers.com/home-care/patiala">Patiala</a></li>
+            <li><a href="https://www.zorgers.com/home-care/karnal">Karnal</a></li>
+            <li><a href="https://www.zorgers.com/home-care/panipat">Panipat</a></li>
+            <li><a href="https://www.zorgers.com/home-care/ghaziabad">Ghaziabad</a></li>
+            <li><a href="https://www.zorgers.com/home-care/gurugram">Gurugram</a></li>
+            <li><a href="https://www.zorgers.com/home-care/agra">Agra</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-3">
+          <h5 class="footer-title">Common Searches</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.zorgers.com/patient-care-at-home">Patient Care Services</a></li>
+            <li><a href="https://www.zorgers.com/medical-equipment-detail/motorized-recliner-Bed">Patient Bed Recliner for Rent</a></li>
+            <li><a href="https://www.zorgers.com/elder-care-at-home/panchkula">Elder Care at Home</a></li>
+            <li><a href="https://www.zorgers.com/medical-equipment-detail/bipap">BiPAP for Rent</a></li>
+            <li><a href="https://www.zorgers.com/medical-equipment-detail/evox-electric-wheelchair-108">Buy Electric Wheelchair</a></li>
+            <li><a href="https://www.zorgers.com/home-care/panchkula">Senior Care Services</a></li>
+            <li><a href="https://www.zorgers.com/nurse-at-home">Home Nursing Care</a></li>
+            <li><a href="https://www.zorgers.com/elderly-caretaker-at-home">Caretaker for Elderly</a></li>
+            <li><a href="https://www.zorgers.com/medical-equipment-detail/patient-bed-manual?yn_cat_on_top=1">Hospital Bed for Rent</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="col-md-3">
+          <h5 class="footer-title">Our Corporate Office</h5>
+          <p>Zorgers Home Health Care<br>
+            Charu Tower, 1st Floor, Near Ajit Samachar, Phase 8B, Industrial Area, Sahibzada Ajit Singh Nagar, Mohali, Punjab 160071
+          </p>
+          <p><strong>Delhi Office:</strong><br>
+            Panchsheel Enclave, Hauz Khas, South Delhi, Delhi - 110017</p>
+          <p><strong>Call for Services:</strong> (+91) 8725024124</p>
+          <p><strong>Call for Job:</strong> (+91) 7347003701</p>
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</script>
+
+
+</body>
+</html>
